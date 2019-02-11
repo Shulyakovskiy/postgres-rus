@@ -2,6 +2,7 @@ FROM postgres:11
 
 COPY docker-entrypoint-initdb.d /docker-entrypoint-initdb.d
 
+RUN echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen
 RUN localedef -i ru_RU -c -f UTF-8 -A /usr/share/locale/locale.alias ru_RU.UTF-8
 ENV LANG ru_RU.utf8
 
