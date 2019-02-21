@@ -1,5 +1,9 @@
 # PostgreSQL 11 docker image
 
+```bash
+docker pull shold046/postgres-11-rus
+```
+
 В [оригинальный образ](https://hub.docker.com/_/postgres) добавлено:
 
 * локаль ru_RU.UTF-8
@@ -24,4 +28,4 @@ CREATE EXTENSION hunspell_ru_ru;
 (1 row)
 ```
 
-подробности [здесь](https://github.com/postgrespro/hunspell_dicts)
+подробности о словаре [здесь](https://github.com/postgrespro/hunspell_dicts)
