@@ -16,6 +16,7 @@ docker pull shold046/postgres-11-rus
 CREATE EXTENSION postgis;
 CREATE EXTENSION rum;
 CREATE EXTENSION hunspell_ru_ru;
+CREATE EXTENSION jsquery;
 ```
 
 Со словарями работать примерно так
