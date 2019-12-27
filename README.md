@@ -54,3 +54,5 @@ volumes:
     driver_opts:
       mountpoint: /var/lib/postgresql/data
 ```
+## Pg-Tune
+[конфигуратор](https://pgtune.leopard.in.ua/#/)
