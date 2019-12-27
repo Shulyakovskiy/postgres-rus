@@ -1,4 +1,4 @@
-FROM postgres:11
+FROM postgres:12
 
 COPY docker-entrypoint-initdb.d /docker-entrypoint-initdb.d
 
@@ -9,7 +9,7 @@ ENV LANG ru_RU.utf8
 ENV TZ Europe/Moscow
 RUN echo "$TZ" > /etc/timezone && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 
-RUN apt-get update && apt-get install -y --no-install-recommends postgresql-11-rum postgresql-11-postgis-2.5 postgresql-11-postgis-2.5-scripts postgresql-11-jsquery mc nano
+RUN apt-get update && apt-get install -y --no-install-recommends postgresql-12-rum postgresql-12-postgis-2.5 postgresql-12-postgis-2.5-scripts postgresql-12-jsquery mc nano
 
 RUN set -x \
     	&& apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* \
