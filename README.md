@@ -30,3 +30,25 @@ CREATE EXTENSION jsquery;
 ```
 
 подробности о словаре [здесь](https://github.com/postgrespro/hunspell_dicts)
+Установка драйвера томов
+install persist plugin data
+curl -fsSL https://raw.githubusercontent.com/MatchbookLab/local-persist/master/scripts/install.sh | sudo bash
+
+DOCKER-COMPOSE:
+version: '3.7'
+services:
+  pgsql12:
+    container_name: postgresql12-ru
+    image: lyncsystem/postgresql:12
+    ports:
+      - 55432:5432
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+    environment:
+      - "POSTGRES_PASSWORD=53398715"
+
+volumes:
+  postgresql_data:
+    driver: local-persist
+    driver_opts:
+      mountpoint: /var/lib/postgresql/data
