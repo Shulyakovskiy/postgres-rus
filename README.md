@@ -30,11 +30,12 @@ CREATE EXTENSION jsquery;
 ```
 
 подробности о словаре [здесь](https://github.com/postgrespro/hunspell_dicts)
-Установка драйвера томов
-install persist plugin data
-curl -fsSL https://raw.githubusercontent.com/MatchbookLab/local-persist/master/scripts/install.sh | sudo bash
+- Установка драйвера томов.
+- install persist plugin data.
+- curl -fsSL https://raw.githubusercontent.com/MatchbookLab/local-persist/master/scripts/install.sh | sudo bash.
 
-DOCKER-COMPOSE:
+## DOCKER-COMPOSE:
+```
 version: '3.7'
 services:
   pgsql12:
@@ -52,3 +53,4 @@ volumes:
     driver: local-persist
     driver_opts:
       mountpoint: /var/lib/postgresql/data
+```
