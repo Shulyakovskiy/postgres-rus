@@ -1,7 +1,7 @@
 # PostgreSQL 12 docker image
 
 ```bash
-docker pull shold046/postgres-12-rus
+docker pull lyncsystem/postgres-12-rus
 ```
 
 В [оригинальный образ](https://hub.docker.com/_/postgres) добавлено:
