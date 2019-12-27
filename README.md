@@ -1,7 +1,7 @@
-# PostgreSQL 11 docker image
+# PostgreSQL 12 docker image
 
 ```bash
-docker pull shold046/postgres-11-rus
+docker pull shold046/postgres-12-rus
 ```
 
 В [оригинальный образ](https://hub.docker.com/_/postgres) добавлено:
